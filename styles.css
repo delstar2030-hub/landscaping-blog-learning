@@ -129,3 +129,150 @@ font-size: 18px;
 letter-spacing: 2px;
 font-weight: 300;
 }
+/* BLOG SECTION STYLES */
+.blog-section {
+padding: 60px 0;
+background-color: #000;
+}
+/* Individual Blog Card */
+.blog-card {
+display: flex;
+gap: 40px;
+margin-bottom: 80px;
+background-color: #000;
+}
+.blog-content {
+flex: 1;
+color: white;
+}
+.blog-card h2 {
+color: #9ACD32;
+font-size: 32px;
+margin-bottom: 15px;
+line-height: 1.3;
+}
+.blog-date {
+color: #999;
+font-size: 14px;
+margin-bottom: 20px;
+}
+.blog-description {
+color: #ccc;
+font-size: 16px;
+line-height: 1.8;
+margin-bottom: 20px;
+}
+.read-more {
+color: #9ACD32;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+
+🔍 Blog Card Layout Explained:
+display: flex; - Creates side-by-side layout
+gap: 40px; - Space between text and image
+flex: 1; - Both content and image take equal space
+object-fit: cover; - Image fills space without distortion
+border-radius: 8px; - Rounds image corners
+Color Scheme:
+Black background ( #000 ) for modern look
+Yellow-green ( #9ACD32 ) for headlines (brand color)
+Light gray ( #999 ) for dates
+Lighter gray ( #ccc ) for body text
+margin-bottom: 80px; - Space between blog cards
+💡 UNDERSTANDING SPACING:
+margin - Space OUTSIDE an element (pushes other elements away)
+padding - Space INSIDE an element (creates breathing room within)
+Try this experiment: Add border: 2px solid red; to .blog-card . You'll see exactly where margins and padding
+are!
+🔍 RESEARCH MOMENT:
+What to Google: "CSS flexbox vs grid layout"
+Question to explore: When should you use flexbox vs CSS Grid?
+Hint: Flexbox = one-dimensional (row OR column), Grid = two-dimensional (rows AND columns)
+.read-more:hover {
+color: #7DB428;
+}
+/* Blog Image */
+.blog-image {
+flex: 1;
+}
+.blog-image img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-radius: 8px;
+}
+/* FOOTER STYLES */
+.site-footer {
+background-color: #1a1a1a;
+color: white;
+padding: 60px 0 20px;
+}
+.footer-content {
+display: flex;
+justify-content: space-between;
+gap: 40px;
+margin-bottom: 40px;
+}
+.footer-column {
+flex: 1;
+}
+.footer-logo {
+height: 50px;
+margin-bottom: 20px;
+}
+.phone {
+font-size: 22px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.address {
+color: #999;
+line-height: 1.6;
+}
+.footer-column h3 {
+color: #9ACD32;
+font-size: 18px;
+margin-bottom: 20px;
+}
+.footer-column ul {
+list-style: none;
+}
+.footer-column ul li {
+margin-bottom: 10px;
+
+🔍 Footer Styling Breakdown:
+background-color: #1a1a1a; - Very dark gray (not pure black)
+display: flex; - Creates columns side-by-side
+justify-content: space-between; - Distributes columns evenly
+border-top: 1px solid #333; - Thin line above copyright
+Hover Effects: All links transition to yellow-green on hover for consistency with the brand color scheme.
+🎉 FINAL TEST!
+1. Save all files ( Ctrl + S )
+2. Refresh your Live Server browser
+3. Your page should now be fully styled!
+4. Test all hover effects (navigation, buttons, links)
+5. Scroll the page - the header should stick to the top
+Don't worry if images are broken - you'll add them later!
+
+12. Git Workflow & Commits
+Understanding Git Workflow
+Git helps you save "checkpoints" of your work. Think of it like saving a game - you can always go back to a
+previous save!
+}
+.footer-column a {
+color: #ccc;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+.footer-column a:hover {
+color: #9ACD32;
+}
+.footer-bottom {
+border-top: 1px solid #333;
+padding-top: 20px;
+text-align: center;
+color: #666;
+font-size: 14px;
+}
